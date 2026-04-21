@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Banner Slider</title>
+  <link rel="stylesheet" href="../resources/assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../resources/assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../resources/assets/css/style.css">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #eef6ff 0%, #f6fbff 44%, #f8fcff 100%);
+      color: #0f172a;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      padding: 28px 18px;
+      color: #fff;
+      background: linear-gradient(180deg, #081225 0%, #0f172a 52%, #111827 100%);
+    }
+
+    .link {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 10px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .link.active,
+    .link:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .main {
+      padding: 24px;
+    }
+
+    .hero,
+    .card {
+      border-radius: 28px;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero {
+      margin-bottom: 20px;
+      padding: 28px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(125, 211, 252, 0.26), transparent 24%),
+        radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.18), transparent 28%),
+        linear-gradient(135deg, #07111f 0%, #0f172a 46%, #123b4a 100%);
+    }
+
+    .hero-grid,
+    .stat-grid,
+    .layout,
+    .slider-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero-grid {
+      grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.8fr);
+      align-items: end;
+    }
+
+    .stat-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .layout {
+      grid-template-columns: minmax(320px, 380px) minmax(0, 1fr);
+      align-items: start;
+    }
+
+    .card {
+      padding: 22px;
+    }
+
+    .stat-card {
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .field-label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .field,
+    .file {
+      width: 100%;
+      min-height: 52px;
+      padding: 12px 14px;
+      border: 1px solid #dbe3ef;
+      border-radius: 16px;
+      background: #f8fafc;
+    }
+
+    .preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 220px;
+      margin: 18px 0;
+      border: 2px dashed #cbd5e1;
+      border-radius: 22px;
+      background: #f8fbff;
+      color: #64748b;
+      overflow: hidden;
+    }
+
+    .preview img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .btn-main,
+    .btn-danger {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-main {
+      width: 100%;
+      min-height: 52px;
+      color: #fff;
+      background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    }
+
+    .btn-danger {
+      min-height: 44px;
+      padding: 0 18px;
+      color: #fff;
+      background: #dc2626;
+    }
+
+    .slider-list {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .slider-card {
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      border-radius: 22px;
+      background: #fff;
+    }
+
+    .slider-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .slider-body {
+      padding: 16px;
+    }
+
+    .muted {
+      color: #64748b;
+    }
+
+    @media (max-width: 992px) {
+      .shell,
+      .hero-grid,
+      .layout,
+      .stat-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div style="color:#94a3b8;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;">Ecommerce</div>
+      <h2 style="margin:6px 0 28px;font-weight:700;">Admin Hub</h2>
+      <a class="link" href="./index.php"><i class="mdi mdi-view-dashboard-outline"></i><span>Users</span></a>
+      <a class="link" href="./register.php"><i class="mdi mdi-account-multiple-outline"></i><span>Registrations</span></a>
+      <a class="link active" href="./banner.php"><i class="mdi mdi-image-multiple-outline"></i><span>Banner Slider</span></a>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <span class="badge badge-success px-3 py-2 mb-3">Homepage Visual Manager</span>
+            <h1>Banner idarəsi frontend showcase kimi saxlanıldı.</h1>
+            <p style="max-width:720px;color:rgba(255,255,255,0.78);">
+              Upload, preview və delete axını artıq serverə getmir. Buna baxmayaraq, vizual idarə paneli və interaktiv preview hissəsi statik olaraq işləyir.
+            </p>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-card"><strong style="display:block;font-size:1.7rem;">6</strong><span>Total sliders</span></div>
+            <div class="stat-card"><strong style="display:block;font-size:1.7rem;">4</strong><span>Active sliders</span></div>
+            <div class="stat-card" style="grid-column:1 / -1;"><strong style="display:block;font-size:1.4rem;">Ready to manage</strong><span>Demo kartlar frontend olaraq qalır.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <article class="card">
+          <div style="display:flex;justify-content:space-between;gap:16px;align-items:start;margin-bottom:16px;">
+            <div>
+              <h4 class="mb-1">Yeni banner əlavə et</h4>
+              <p class="muted mb-0">Bu forma demo məqsədlidir və local preview göstərir.</p>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width:52px;height:52px;background:linear-gradient(135deg,#0ea5e9,#2563eb);color:#fff;">
+              <i class="mdi mdi-image-plus" style="font-size:1.3rem;"></i>
+            </div>
+          </div>
+
+          <form id="bannerForm">
+            <div class="form-group">
+              <label class="field-label" for="slider-title">Slider Title</label>
+              <input class="field" id="slider-title" type="text" placeholder="Spring collection campaign">
+            </div>
+            <div class="form-group">
+              <label class="field-label" for="slider-image">Slider Image</label>
+              <input class="file" id="slider-image" type="file" accept=".jpg,.jpeg,.png,.webp">
+            </div>
+
+            <div class="preview" id="bannerPreview">
+              Seçdiyin şəkil burada preview kimi görünəcək.
+            </div>
+
+            <button class="btn-main" type="submit">Preview Upload</button>
+          </form>
+        </article>
+
+        <article class="card">
+          <div style="display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:18px;">
+            <div>
+              <h4 class="mb-1">Mövcud sliderlər</h4>
+              <p class="muted mb-0">Statik demo kartları.</p>
+            </div>
+            <span class="badge badge-outline-info px-3 py-2">6 item</span>
+          </div>
+
+          <div class="slider-list">
+            <article class="slider-card">
+              <img src="../resources/assets/images/carousel/banner_1.jpg" alt="Slider one">
+              <div class="slider-body">
+                <h5>Spring Sale</h5>
+                <p class="muted">ID: 1</p>
+                <button class="btn-danger" type="button">Delete</button>
+              </div>
+            </article>
+            <article class="slider-card">
+              <img src="../resources/assets/images/carousel/banner_2.jpg" alt="Slider two">
+              <div class="slider-body">
+                <h5>New Arrivals</h5>
+                <p class="muted">ID: 2</p>
+                <button class="btn-danger" type="button">Delete</button>
+              </div>
+            </article>
+            <article class="slider-card">
+              <img src="../resources/assets/images/carousel/banner_3.jpg" alt="Slider three">
+              <div class="slider-body">
+                <h5>Summer Picks</h5>
+                <p class="muted">ID: 3</p>
+                <button class="btn-danger" type="button">Delete</button>
+              </div>
+            </article>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var form = document.getElementById('bannerForm');
+      var input = document.getElementById('slider-image');
+      var preview = document.getElementById('bannerPreview');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+      });
+
+      input.addEventListener('change', function (event) {
+        var file = event.target.files && event.target.files[0];
+
+        if (!file) {
+          preview.textContent = 'Seçdiyin şəkil burada preview kimi görünəcək.';
+          return;
+        }
+
+        var reader = new FileReader();
+        reader.onload = function (loadEvent) {
+          preview.innerHTML = '<img src="' + loadEvent.target.result + '" alt="Preview">';
+        };
+        reader.readAsDataURL(file);
+      });
+    })();
+  </script>
+</body>
+</html>

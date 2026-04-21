@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Registrations</title>
+  <link rel="stylesheet" href="../resources/assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../resources/assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../resources/assets/css/style.css">
+  <style>
+    :root {
+      --bg: #f3f7fb;
+      --panel: rgba(255, 255, 255, 0.94);
+      --text: #0f172a;
+      --muted: #64748b;
+      --line: #dbe4f0;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef8ff 0%, var(--bg) 44%, #f6fbf8 100%);
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      padding: 28px 18px;
+      color: #fff;
+      background: linear-gradient(180deg, #081225 0%, #0f172a 52%, #111827 100%);
+    }
+
+    .link {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 10px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      color: #e2e8f0;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .link:hover,
+    .link.active {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    .main {
+      padding: 24px;
+    }
+
+    .hero,
+    .panel,
+    .mini {
+      border-radius: 24px;
+      background: var(--panel);
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero {
+      margin-bottom: 20px;
+      padding: 28px;
+      color: #fff;
+      background: radial-gradient(circle at top left, rgba(14, 165, 233, 0.18), transparent 28%), linear-gradient(135deg, #0f172a 0%, #0f766e 55%, #22c55e 100%);
+    }
+
+    .hero-grid,
+    .stats,
+    .summary {
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero-grid {
+      grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.8fr);
+      align-items: end;
+    }
+
+    .stats,
+    .summary {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .stat,
+    .mini,
+    .panel {
+      padding: 22px;
+    }
+
+    .stat {
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 16px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .badge-soft,
+    .btn-soft {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .badge-soft {
+      padding: 8px 14px;
+      color: #fff;
+      background: rgba(255,255,255,0.14);
+    }
+
+    .btn-soft {
+      padding: 10px 16px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .btn-soft.edit {
+      background: #16a34a;
+    }
+
+    .btn-soft.delete {
+      background: #dc2626;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    @media (max-width: 992px) {
+      .shell,
+      .hero-grid,
+      .stats,
+      .summary {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div style="color:#94a3b8;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;">Ecommerce</div>
+      <h2 style="margin:6px 0 28px;font-weight:700;">Admin Hub</h2>
+      <a class="link" href="./index.php"><i class="mdi mdi-view-dashboard-outline"></i><span>Users</span></a>
+      <a class="link active" href="./register.php"><i class="mdi mdi-account-multiple-outline"></i><span>Registrations</span></a>
+      <a class="link" href="./banner.php"><i class="mdi mdi-image-multiple-outline"></i><span>Banner Slider</span></a>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="badge-soft">Registration flow</div>
+            <h1 class="mt-3">Qeydiyyat paneli artıq yalnız frontend nümunəsidir.</h1>
+            <p class="mb-0" style="color:rgba(255,255,255,0.82);">
+              Dinamik siyahı, edit və delete əməliyyatları silindi. Dizayn isə demo cədvəl ilə qorundu.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong style="display:block;font-size:1.8rem;">184</strong><span>Registrations</span></div>
+            <div class="stat"><strong style="display:block;font-size:1.8rem;">Full</strong><span>Profile data</span></div>
+            <div class="stat"><strong style="display:block;font-size:1.8rem;">Ready</strong><span>Review status</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary" style="margin-bottom:20px;">
+        <article class="mini">
+          <h5>Structured table</h5>
+          <p class="muted mb-0">Frontend demo üçün nizamlı sütun quruluşu saxlanıldı.</p>
+        </article>
+        <article class="mini">
+          <h5>Action clarity</h5>
+          <p class="muted mb-0">Buttonlar vizual olaraq qalır, amma heç bir backend-ə bağlı deyil.</p>
+        </article>
+        <article class="mini">
+          <h5>Responsive layout</h5>
+          <p class="muted mb-0">Mobil və desktop görünüşü balanslı saxlanıldı.</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div style="display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:18px;">
+          <div>
+            <h4 class="mb-1">Signup records</h4>
+            <p class="muted mb-0">Statik frontend kontenti.</p>
+          </div>
+          <div class="badge badge-outline-info px-3 py-2">184 total</div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Birthday</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12</td>
+                <td>Lara</td>
+                <td>Karimova</td>
+                <td>1998-04-12</td>
+                <td>Female</td>
+                <td>lara@example.com</td>
+                <td><a class="btn-soft edit" href="javascript:void(0)">Edit</a></td>
+                <td><a class="btn-soft delete" href="javascript:void(0)">Delete</a></td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Murad</td>
+                <td>Aliyev</td>
+                <td>1996-11-28</td>
+                <td>Male</td>
+                <td>murad@example.com</td>
+                <td><a class="btn-soft edit" href="javascript:void(0)">Edit</a></td>
+                <td><a class="btn-soft delete" href="javascript:void(0)">Delete</a></td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Nigar</td>
+                <td>Hasanova</td>
+                <td>2000-07-03</td>
+                <td>Female</td>
+                <td>nigar@example.com</td>
+                <td><a class="btn-soft edit" href="javascript:void(0)">Edit</a></td>
+                <td><a class="btn-soft delete" href="javascript:void(0)">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
