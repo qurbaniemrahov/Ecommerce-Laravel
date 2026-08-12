@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <base href="{{ asset('frontend') }}/">
     <link href="images/favicon.png" rel="shortcut icon">
     <title>Ludus - Electronics, Apparel, Computers, Books, DVDs & more</title>
 
@@ -152,14 +153,14 @@ body {
 
                         <!--====== Main Logo ======-->
 
-                        <a class="main-logo" href="index.html">
+                        <a class="main-logo" href="/">
 
                             <img src="images/logo/logo-1.png" alt=""></a>
                         <!--====== End - Main Logo ======-->
 
 
                         <!--====== Search Form ======-->
-                        <form class="main-form">
+                        <form class="main-form" action="/shop-side-version-2" method="get">
 
                             <label for="main-search"></label>
 
@@ -191,22 +192,22 @@ body {
                                         <ul style="width:120px">
                                             <li>
 
-                                                <a href="dashboard.php"><i class="fas fa-user-circle u-s-m-r-6"></i>
+                                                <a href="/dashboard"><i class="fas fa-user-circle u-s-m-r-6"></i>
 
                                                     <span>Account</span></a></li>
                                             <li>
 
-                                                <a href="signup.php"><i class="fas fa-user-plus u-s-m-r-6"></i>
+                                                <a href="/signup"><i class="fas fa-user-plus u-s-m-r-6"></i>
 
                                                     <span>Signup</span></a></li>
                                             <li>
 
-                                                <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
+                                                <a href="/signin"><i class="fas fa-lock u-s-m-r-6"></i>
 
                                                     <span>Signin</span></a></li>
                                             <li>
 
-                                                <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
+                                                <a href="/logout"><i class="fas fa-lock-open u-s-m-r-6"></i>
 
                                                     <span>Signout</span></a></li>
                                         </ul>
@@ -317,49 +318,49 @@ body {
                                                     <ul>
                                                         <li class="js-active">
 
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-tv u-s-m-r-6"></i>
+                                                            <a href="/shop-side-version-2"><i class="fas fa-tv u-s-m-r-6"></i>
 
                                                                 <span>Electronics</span></a>
 
                                                             <span class="js-menu-toggle js-toggle-mark"></span></li>
                                                         <li>
 
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-female u-s-m-r-6"></i>
+                                                            <a href="/shop-side-version-2"><i class="fas fa-female u-s-m-r-6"></i>
 
                                                                 <span>Women's Clothing</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
 
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-male u-s-m-r-6"></i>
+                                                            <a href="/shop-side-version-2"><i class="fas fa-male u-s-m-r-6"></i>
 
                                                                 <span>Men's Clothing</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
 
-                                                            <a href="index.html"><i class="fas fa-utensils u-s-m-r-6"></i>
+                                                            <a href="/"><i class="fas fa-utensils u-s-m-r-6"></i>
 
                                                                 <span>Food & Supplies</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
 
-                                                            <a href="index.html"><i class="fas fa-couch u-s-m-r-6"></i>
+                                                            <a href="/"><i class="fas fa-couch u-s-m-r-6"></i>
 
                                                                 <span>Furniture & Decor</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
 
-                                                            <a href="index.html"><i class="fas fa-football-ball u-s-m-r-6"></i>
+                                                            <a href="/"><i class="fas fa-football-ball u-s-m-r-6"></i>
 
                                                                 <span>Sports & Game</span></a>
 
                                                             <span class="js-menu-toggle"></span></li>
                                                         <li>
 
-                                                            <a href="index.html"><i class="fas fa-heartbeat u-s-m-r-6"></i>
+                                                            <a href="/"><i class="fas fa-heartbeat u-s-m-r-6"></i>
 
                                                                 <span>Beauty & Health</span></a>
 
@@ -376,155 +377,73 @@ body {
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">3D PRINTER & SUPPLIES</a></li>
+                                                                    <a href="/shop-side-version-2">3D PRINTER & SUPPLIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">3d Printer</a></li>
+                                                                    <a href="/shop-side-version-2">3d Printer</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">3d Printing Pen</a></li>
+                                                                    <a href="/shop-side-version-2">3d Printing Pen</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">3d Printing Accessories</a></li>
+                                                                    <a href="/shop-side-version-2">3d Printing Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">3d Printer Module Board</a></li>
+                                                                    <a href="/shop-side-version-2">3d Printer Module Board</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">HOME AUDIO & VIDEO</a></li>
+                                                                    <a href="/shop-side-version-2">HOME AUDIO & VIDEO</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">TV Boxes</a></li>
+                                                                    <a href="/shop-side-version-2">TV Boxes</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">TC Receiver & Accessories</a></li>
+                                                                    <a href="/shop-side-version-2">TC Receiver & Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Display Dongle</a></li>
+                                                                    <a href="/shop-side-version-2">Display Dongle</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Home Theater System</a></li>
+                                                                    <a href="/shop-side-version-2">Home Theater System</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">MEDIA PLAYERS</a></li>
+                                                                    <a href="/shop-side-version-2">MEDIA PLAYERS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Earphones</a></li>
+                                                                    <a href="/shop-side-version-2">Earphones</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Mp3 Players</a></li>
+                                                                    <a href="/shop-side-version-2">Mp3 Players</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Speakers & Radios</a></li>
+                                                                    <a href="/shop-side-version-2">Speakers & Radios</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Microphones</a></li>
+                                                                    <a href="/shop-side-version-2">Microphones</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">VIDEO GAME ACCESSORIES</a></li>
+                                                                    <a href="/shop-side-version-2">VIDEO GAME ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Nintendo Video Games Accessories</a></li>
+                                                                    <a href="/shop-side-version-2">Nintendo Video Games Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Sony Video Games Accessories</a></li>
+                                                                    <a href="/shop-side-version-2">Sony Video Games Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Xbox Video Games Accessories</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!--====== End - Mega Menu Row ======-->
-                                                    <br>
-
-                                                    <!--====== Mega Menu Row ======-->
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">SECURITY & PROTECTION</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Security Cameras</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Alarm System</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Security Gadgets</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">CCTV Security & Accessories</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">PHOTOGRAPHY & CAMERA</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Digital Cameras</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Sport Camera & Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Camera Accessories</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Lenses & Accessories</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">ARDUINO COMPATIBLE</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Raspberry Pi & Orange Pi</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Module Board</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Smart Robot</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Board Kits</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <ul>
-                                                                <li class="mega-list-title">
-
-                                                                    <a href="shop-side-version-2.html">DSLR Camera</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Nikon Cameras</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Canon Camera</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Sony Camera</a></li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">DSLR Lenses</a></li>
+                                                                    <a href="/shop-side-version-2">Xbox Video Games Accessories</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -537,25 +456,107 @@ body {
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">NECESSARY ACCESSORIES</a></li>
+                                                                    <a href="/shop-side-version-2">SECURITY & PROTECTION</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Flash Cards</a></li>
+                                                                    <a href="/shop-side-version-2">Security Cameras</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Memory Cards</a></li>
+                                                                    <a href="/shop-side-version-2">Alarm System</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Flash Pins</a></li>
+                                                                    <a href="/shop-side-version-2">Security Gadgets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Compact Discs</a></li>
+                                                                    <a href="/shop-side-version-2">CCTV Security & Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="/shop-side-version-2">PHOTOGRAPHY & CAMERA</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Digital Cameras</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Sport Camera & Accessories</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Camera Accessories</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Lenses & Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="/shop-side-version-2">ARDUINO COMPATIBLE</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Raspberry Pi & Orange Pi</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Module Board</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Smart Robot</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Board Kits</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="/shop-side-version-2">DSLR Camera</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Nikon Cameras</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Canon Camera</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Sony Camera</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">DSLR Lenses</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <br>
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="/shop-side-version-2">NECESSARY ACCESSORIES</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Flash Cards</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Memory Cards</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Flash Pins</a></li>
+                                                                <li>
+
+                                                                    <a href="/shop-side-version-2">Compact Discs</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-9 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-0.jpg" alt=""></a></div>
                                                         </div>
@@ -573,14 +574,14 @@ body {
                                                         <div class="col-lg-6 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-1.jpg" alt=""></a></div>
                                                         </div>
                                                         <div class="col-lg-6 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-2.jpg" alt=""></a></div>
                                                         </div>
@@ -594,76 +595,76 @@ body {
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">HOT CATEGORIES</a></li>
+                                                                    <a href="/shop-side-version-2">HOT CATEGORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Dresses</a></li>
+                                                                    <a href="/shop-side-version-2">Dresses</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Blouses & Shirts</a></li>
+                                                                    <a href="/shop-side-version-2">Blouses & Shirts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">T-shirts</a></li>
+                                                                    <a href="/shop-side-version-2">T-shirts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Rompers</a></li>
+                                                                    <a href="/shop-side-version-2">Rompers</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">INTIMATES</a></li>
+                                                                    <a href="/shop-side-version-2">INTIMATES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bras</a></li>
+                                                                    <a href="/shop-side-version-2">Bras</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Brief Sets</a></li>
+                                                                    <a href="/shop-side-version-2">Brief Sets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bustiers & Corsets</a></li>
+                                                                    <a href="/shop-side-version-2">Bustiers & Corsets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Panties</a></li>
+                                                                    <a href="/shop-side-version-2">Panties</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">WEDDING & EVENTS</a></li>
+                                                                    <a href="/shop-side-version-2">WEDDING & EVENTS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Wedding Dresses</a></li>
+                                                                    <a href="/shop-side-version-2">Wedding Dresses</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Evening Dresses</a></li>
+                                                                    <a href="/shop-side-version-2">Evening Dresses</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Prom Dresses</a></li>
+                                                                    <a href="/shop-side-version-2">Prom Dresses</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Flower Dresses</a></li>
+                                                                    <a href="/shop-side-version-2">Flower Dresses</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">BOTTOMS</a></li>
+                                                                    <a href="/shop-side-version-2">BOTTOMS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Skirts</a></li>
+                                                                    <a href="/shop-side-version-2">Skirts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Shorts</a></li>
+                                                                    <a href="/shop-side-version-2">Shorts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Leggings</a></li>
+                                                                    <a href="/shop-side-version-2">Leggings</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Jeans</a></li>
+                                                                    <a href="/shop-side-version-2">Jeans</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -676,76 +677,76 @@ body {
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">OUTWEAR</a></li>
+                                                                    <a href="/shop-side-version-2">OUTWEAR</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Blazers</a></li>
+                                                                    <a href="/shop-side-version-2">Blazers</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Basics Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Basics Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Trench</a></li>
+                                                                    <a href="/shop-side-version-2">Trench</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Leather & Suede</a></li>
+                                                                    <a href="/shop-side-version-2">Leather & Suede</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">JACKETS</a></li>
+                                                                    <a href="/shop-side-version-2">JACKETS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Denim Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Denim Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Trucker Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Trucker Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Windbreaker Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Windbreaker Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Leather Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Leather Jackets</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">ACCESSORIES</a></li>
+                                                                    <a href="/shop-side-version-2">ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Tech Accessories</a></li>
+                                                                    <a href="/shop-side-version-2">Tech Accessories</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Headwear</a></li>
+                                                                    <a href="/shop-side-version-2">Headwear</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Baseball Caps</a></li>
+                                                                    <a href="/shop-side-version-2">Baseball Caps</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Belts</a></li>
+                                                                    <a href="/shop-side-version-2">Belts</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">OTHER ACCESSORIES</a></li>
+                                                                    <a href="/shop-side-version-2">OTHER ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bags</a></li>
+                                                                    <a href="/shop-side-version-2">Bags</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Wallets</a></li>
+                                                                    <a href="/shop-side-version-2">Wallets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Watches</a></li>
+                                                                    <a href="/shop-side-version-2">Watches</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Sunglasses</a></li>
+                                                                    <a href="/shop-side-version-2">Sunglasses</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -757,14 +758,14 @@ body {
                                                         <div class="col-lg-9 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-3.jpg" alt=""></a></div>
                                                         </div>
                                                         <div class="col-lg-3 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-4.jpg" alt=""></a></div>
                                                         </div>
@@ -782,21 +783,21 @@ body {
                                                         <div class="col-lg-4 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-5.jpg" alt=""></a></div>
                                                         </div>
                                                         <div class="col-lg-4 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-6.jpg" alt=""></a></div>
                                                         </div>
                                                         <div class="col-lg-4 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-7.jpg" alt=""></a></div>
                                                         </div>
@@ -810,76 +811,76 @@ body {
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">HOT SALE</a></li>
+                                                                    <a href="/shop-side-version-2">HOT SALE</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">T-Shirts</a></li>
+                                                                    <a href="/shop-side-version-2">T-Shirts</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Tank Tops</a></li>
+                                                                    <a href="/shop-side-version-2">Tank Tops</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Polo</a></li>
+                                                                    <a href="/shop-side-version-2">Polo</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Shirts</a></li>
+                                                                    <a href="/shop-side-version-2">Shirts</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">OUTWEAR</a></li>
+                                                                    <a href="/shop-side-version-2">OUTWEAR</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Hoodies</a></li>
+                                                                    <a href="/shop-side-version-2">Hoodies</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Trench</a></li>
+                                                                    <a href="/shop-side-version-2">Trench</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Parkas</a></li>
+                                                                    <a href="/shop-side-version-2">Parkas</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Sweaters</a></li>
+                                                                    <a href="/shop-side-version-2">Sweaters</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">BOTTOMS</a></li>
+                                                                    <a href="/shop-side-version-2">BOTTOMS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Casual Pants</a></li>
+                                                                    <a href="/shop-side-version-2">Casual Pants</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Cargo Pants</a></li>
+                                                                    <a href="/shop-side-version-2">Cargo Pants</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Jeans</a></li>
+                                                                    <a href="/shop-side-version-2">Jeans</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Shorts</a></li>
+                                                                    <a href="/shop-side-version-2">Shorts</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">UNDERWEAR</a></li>
+                                                                    <a href="/shop-side-version-2">UNDERWEAR</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Boxers</a></li>
+                                                                    <a href="/shop-side-version-2">Boxers</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Briefs</a></li>
+                                                                    <a href="/shop-side-version-2">Briefs</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Robes</a></li>
+                                                                    <a href="/shop-side-version-2">Robes</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Socks</a></li>
+                                                                    <a href="/shop-side-version-2">Socks</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -892,76 +893,76 @@ body {
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">JACKETS</a></li>
+                                                                    <a href="/shop-side-version-2">JACKETS</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Denim Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Denim Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Trucker Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Trucker Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Windbreaker Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Windbreaker Jackets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Leather Jackets</a></li>
+                                                                    <a href="/shop-side-version-2">Leather Jackets</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">SUNGLASSES</a></li>
+                                                                    <a href="/shop-side-version-2">SUNGLASSES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Pilot</a></li>
+                                                                    <a href="/shop-side-version-2">Pilot</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Wayfarer</a></li>
+                                                                    <a href="/shop-side-version-2">Wayfarer</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Square</a></li>
+                                                                    <a href="/shop-side-version-2">Square</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Round</a></li>
+                                                                    <a href="/shop-side-version-2">Round</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">ACCESSORIES</a></li>
+                                                                    <a href="/shop-side-version-2">ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Eyewear Frames</a></li>
+                                                                    <a href="/shop-side-version-2">Eyewear Frames</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Scarves</a></li>
+                                                                    <a href="/shop-side-version-2">Scarves</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Hats</a></li>
+                                                                    <a href="/shop-side-version-2">Hats</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Belts</a></li>
+                                                                    <a href="/shop-side-version-2">Belts</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <ul>
                                                                 <li class="mega-list-title">
 
-                                                                    <a href="shop-side-version-2.html">OTHER ACCESSORIES</a></li>
+                                                                    <a href="/shop-side-version-2">OTHER ACCESSORIES</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Bags</a></li>
+                                                                    <a href="/shop-side-version-2">Bags</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Wallets</a></li>
+                                                                    <a href="/shop-side-version-2">Wallets</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Watches</a></li>
+                                                                    <a href="/shop-side-version-2">Watches</a></li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Tech Accessories</a></li>
+                                                                    <a href="/shop-side-version-2">Tech Accessories</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -973,14 +974,14 @@ body {
                                                         <div class="col-lg-6 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-8.jpg" alt=""></a></div>
                                                         </div>
                                                         <div class="col-lg-6 mega-image">
                                                             <div class="mega-banner">
 
-                                                                <a class="u-d-block" href="shop-side-version-2.html">
+                                                                <a class="u-d-block" href="/shop-side-version-2">
 
                                                                     <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-9.jpg" alt=""></a></div>
                                                         </div>
@@ -1042,7 +1043,7 @@ body {
                                 <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="shop-side-version-2.html">NEW ARRIVALS</a></li>
+                                        <a href="/shop-side-version-2">NEW ARRIVALS</a></li>
                                     <li class="has-dropdown">
 
                                         <a>PAGES<i class="fas fa-angle-down u-s-m-l-6"></i></a>
@@ -1061,13 +1062,13 @@ body {
                                                 <ul style="width:118px">
                                                     <li>
 
-                                                        <a href="index.html">Home 1</a></li>
+                                                        <a href="/">Home 1</a></li>
                                                     <li>
 
-                                                        <a href="index-2.html">Home 2</a></li>
+                                                        <a href="/index-2">Home 2</a></li>
                                                     <li>
 
-                                                        <a href="index-3.html">Home 3</a></li>
+                                                        <a href="/index-3">Home 3</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
@@ -1081,19 +1082,19 @@ body {
                                                 <ul style="width:200px">
                                                     <li>
 
-                                                        <a href="signin.html">Signin / Already Registered</a></li>
+                                                        <a href="/signin">Signin / Already Registered</a></li>
                                                     <li>
 
-                                                        <a href="signup.html">Signup / Register</a></li>
+                                                        <a href="/signup">Signup / Register</a></li>
                                                     <li>
 
-                                                        <a href="lost-password.html">Lost Password</a></li>
+                                                        <a href="/lost-password">Lost Password</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
                                             <li class="has-dropdown has-dropdown--ul-left-100">
 
-                                                <a href="dashboard.php">Dashboard<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                <a href="/dashboard">Dashboard<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
 
                                                 <!--====== Dropdown ======-->
 
@@ -1101,7 +1102,7 @@ body {
                                                 <ul style="width:200px">
                                                     <li class="has-dropdown has-dropdown--ul-left-100">
 
-                                                        <a href="dashboard.html">Manage My Account<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                        <a href="/dashboard">Manage My Account<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
 
                                                         <!--====== Dropdown ======-->
 
@@ -1109,22 +1110,22 @@ body {
                                                         <ul style="width:180px">
                                                             <li>
 
-                                                                <a href="dash-edit-profile.html">Edit Profile</a></li>
+                                                                <a href="/dashboard/edit-profile">Edit Profile</a></li>
                                                             <li>
 
-                                                                <a href="dash-address-book.html">Edit Address Book</a></li>
+                                                                <a href="/dashboard/address-book">Edit Address Book</a></li>
                                                             <li>
 
-                                                                <a href="dash-manage-order.html">Manage Order</a></li>
+                                                                <a href="/dashboard/manage-order">Manage Order</a></li>
                                                         </ul>
                                                         <!--====== End - Dropdown ======-->
                                                     </li>
                                                     <li>
 
-                                                        <a href="dash-my-profile.html">My Profile</a></li>
+                                                        <a href="/dashboard/my-profile">My Profile</a></li>
                                                     <li class="has-dropdown has-dropdown--ul-left-100">
 
-                                                        <a href="dash-address-book.html">Address Book<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
+                                                        <a href="/dashboard/address-book">Address Book<i class="fas fa-angle-down i-state-right u-s-m-l-6"></i></a>
 
                                                         <!--====== Dropdown ======-->
 
@@ -1132,28 +1133,28 @@ body {
                                                         <ul style="width:180px">
                                                             <li>
 
-                                                                <a href="dash-address-make-default.html">Address Make Default</a></li>
+                                                                <a href="/dashboard/address-make-default">Address Make Default</a></li>
                                                             <li>
 
-                                                                <a href="dash-address-add.html">Add New Address</a></li>
+                                                                <a href="/dashboard/address-add">Add New Address</a></li>
                                                             <li>
 
-                                                                <a href="dash-address-edit.html">Edit Address Book</a></li>
+                                                                <a href="/dashboard/address-edit">Edit Address Book</a></li>
                                                         </ul>
                                                         <!--====== End - Dropdown ======-->
                                                     </li>
                                                     <li>
 
-                                                        <a href="dash-track-order.html">Track Order</a></li>
+                                                        <a href="/dashboard/track-order">Track Order</a></li>
                                                     <li>
 
-                                                        <a href="dash-my-order.html">My Orders</a></li>
+                                                        <a href="/dashboard/my-order">My Orders</a></li>
                                                     <li>
 
-                                                        <a href="dash-payment-option.html">My Payment Options</a></li>
+                                                        <a href="/dashboard/payment-option">My Payment Options</a></li>
                                                     <li>
 
-                                                        <a href="dash-cancellation.html">My Returns & Cancellations</a></li>
+                                                        <a href="/dashboard/cancellation">My Returns & Cancellations</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
@@ -1167,13 +1168,13 @@ body {
                                                 <ul style="width:200px">
                                                     <li>
 
-                                                        <a href="empty-search.html">Empty Search</a></li>
+                                                        <a href="/empty-search">Empty Search</a></li>
                                                     <li>
 
-                                                        <a href="empty-cart.html">Empty Cart</a></li>
+                                                        <a href="/empty-cart">Empty Cart</a></li>
                                                     <li>
 
-                                                        <a href="empty-wishlist.html">Empty Wishlist</a></li>
+                                                        <a href="/empty-wishlist">Empty Wishlist</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
@@ -1187,13 +1188,13 @@ body {
                                                 <ul style="width:200px">
                                                     <li>
 
-                                                        <a href="product-detail.html">Product Details</a></li>
+                                                        <a href="/product-detail">Product Details</a></li>
                                                     <li>
 
-                                                        <a href="product-detail-variable.html">Product Details Variable</a></li>
+                                                        <a href="/product-detail-variable">Product Details Variable</a></li>
                                                     <li>
 
-                                                        <a href="product-detail-affiliate.html">Product Details Affiliate</a></li>
+                                                        <a href="/product-detail-affiliate">Product Details Affiliate</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
@@ -1207,16 +1208,16 @@ body {
                                                 <ul style="width:200px">
                                                     <li>
 
-                                                        <a href="shop-grid-left.html">Shop Grid Left Sidebar</a></li>
+                                                        <a href="/shop-grid-left">Shop Grid Left Sidebar</a></li>
                                                     <li>
 
-                                                        <a href="shop-grid-right.html">Shop Grid Right Sidebar</a></li>
+                                                        <a href="/shop-grid-right">Shop Grid Right Sidebar</a></li>
                                                     <li>
 
-                                                        <a href="shop-grid-full.html">Shop Grid Full Width</a></li>
+                                                        <a href="/shop-grid-full">Shop Grid Full Width</a></li>
                                                     <li>
 
-                                                        <a href="shop-side-version-2.html">Shop Side Version 2</a></li>
+                                                        <a href="/shop-side-version-2">Shop Side Version 2</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
@@ -1230,37 +1231,37 @@ body {
                                                 <ul style="width:200px">
                                                     <li>
 
-                                                        <a href="shop-list-left.html">Shop List Left Sidebar</a></li>
+                                                        <a href="/shop-list-left">Shop List Left Sidebar</a></li>
                                                     <li>
 
-                                                        <a href="shop-list-right.html">Shop List Right Sidebar</a></li>
+                                                        <a href="/shop-list-right">Shop List Right Sidebar</a></li>
                                                     <li>
 
-                                                        <a href="shop-list-full.html">Shop List Full Width</a></li>
+                                                        <a href="/shop-list-full">Shop List Full Width</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>
                                             <li>
 
-                                                <a href="cart.html">Cart</a></li>
+                                                <a href="/cart">Cart</a></li>
                                             <li>
 
-                                                <a href="wishlist.html">Wishlist</a></li>
+                                                <a href="/wishlist">Wishlist</a></li>
                                             <li>
 
-                                                <a href="checkout.html">Checkout</a></li>
+                                                <a href="/checkout">Checkout</a></li>
                                             <li>
 
-                                                <a href="faq.html">FAQ</a></li>
+                                                <a href="/faq">FAQ</a></li>
                                             <li>
 
-                                                <a href="about.html">About us</a></li>
+                                                <a href="/about">About us</a></li>
                                             <li>
 
-                                                <a href="contact.html">Contact</a></li>
+                                                <a href="/contact">Contact</a></li>
                                             <li>
 
-                                                <a href="404.html">404</a></li>
+                                                <a href="/404">404</a></li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
@@ -1274,28 +1275,28 @@ body {
                                         <ul style="width:200px">
                                             <li>
 
-                                                <a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                                <a href="/blog-left-sidebar">Blog Left Sidebar</a></li>
                                             <li>
 
-                                                <a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                                <a href="/blog-right-sidebar">Blog Right Sidebar</a></li>
                                             <li>
 
-                                                <a href="blog-sidebar-none.html">Blog Sidebar None</a></li>
+                                                <a href="/blog-sidebar-none">Blog Sidebar None</a></li>
                                             <li>
 
-                                                <a href="blog-masonry.html">Blog Masonry</a></li>
+                                                <a href="/blog-masonry">Blog Masonry</a></li>
                                             <li>
 
-                                                <a href="blog-detail.html">Blog Details</a></li>
+                                                <a href="/blog-detail">Blog Details</a></li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
                                     <li>
 
-                                        <a href="shop-side-version-2.html">VALUE OF THE DAY</a></li>
+                                        <a href="/shop-side-version-2">VALUE OF THE DAY</a></li>
                                     <li>
 
-                                        <a href="shop-side-version-2.html">GIFT CARDS</a></li>
+                                        <a href="/shop-side-version-2">GIFT CARDS</a></li>
                                 </ul>
                                 <!--====== End - List ======-->
                             </div>
@@ -1320,10 +1321,10 @@ body {
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="index.html"><i class="fas fa-home u-c-brand"></i></a></li>
+                                        <a href="/"><i class="fas fa-home u-c-brand"></i></a></li>
                                     <li>
 
-                                        <a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                                        <a href="/wishlist"><i class="far fa-heart"></i></a></li>
                                     <li class="has-dropdown">
 
                                         <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
@@ -1343,18 +1344,18 @@ body {
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
-                                                            <a class="mini-product__link" href="product-detail.html">
+                                                            <a class="mini-product__link" href="/product-detail">
 
                                                                 <img class="u-img-fluid" src="images/product/electronic/product3.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Electronics</a></span>
+                                                                <a href="/shop-side-version-2">Electronics</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">Yellow Wireless Headphone</a></span>
+                                                                <a href="/product-detail">Yellow Wireless Headphone</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
@@ -1371,18 +1372,18 @@ body {
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
-                                                            <a class="mini-product__link" href="product-detail.html">
+                                                            <a class="mini-product__link" href="/product-detail">
 
                                                                 <img class="u-img-fluid" src="images/product/electronic/product18.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Electronics</a></span>
+                                                                <a href="/shop-side-version-2">Electronics</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">Nikon DSLR Camera 4k</a></span>
+                                                                <a href="/product-detail">Nikon DSLR Camera 4k</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
@@ -1399,18 +1400,18 @@ body {
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
-                                                            <a class="mini-product__link" href="product-detail.html">
+                                                            <a class="mini-product__link" href="/product-detail">
 
                                                                 <img class="u-img-fluid" src="images/product/women/product8.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Women Clothing</a></span>
+                                                                <a href="/shop-side-version-2">Women Clothing</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">New Dress D Nice Elegant</a></span>
+                                                                <a href="/product-detail">New Dress D Nice Elegant</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
@@ -1427,18 +1428,18 @@ body {
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
-                                                            <a class="mini-product__link" href="product-detail.html">
+                                                            <a class="mini-product__link" href="/product-detail">
 
                                                                 <img class="u-img-fluid" src="images/product/men/product8.jpg" alt=""></a></div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Men Clothing</a></span>
+                                                                <a href="/shop-side-version-2">Men Clothing</a></span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">New Fashion D Nice Elegant</a></span>
+                                                                <a href="/product-detail">New Fashion D Nice Elegant</a></span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
@@ -1461,9 +1462,9 @@ body {
                                                     <span class="subtotal-value">$16</span></div>
                                                 <div class="mini-action">
 
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">PROCEED TO CHECKOUT</a>
+                                                    <a class="mini-link btn--e-brand-b-2" href="/checkout">PROCEED TO CHECKOUT</a>
 
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">VIEW CART</a></div>
+                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="/cart">VIEW CART</a></div>
                                             </div>
                                             <!--====== End - Mini Product Statistics ======-->
                                         </div>
@@ -1545,28 +1546,28 @@ body {
                         <div class="row">
                             <div class="col-lg-5 col-md-5 u-s-m-b-30">
 
-                                <a class="collection" href="shop-side-version-2.html">
+                                <a class="collection" href="/shop-side-version-2">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
                                         <img class="aspect__img collection__img" src="images/collection/coll-1.jpg" alt=""></div>
                                 </a></div>
                             <div class="col-lg-7 col-md-7 u-s-m-b-30">
 
-                                <a class="collection" href="shop-side-version-2.html">
+                                <a class="collection" href="/shop-side-version-2">
                                     <div class="aspect aspect--bg-grey aspect--1286-890">
 
                                         <img class="aspect__img collection__img" src="images/collection/coll-2.jpg" alt=""></div>
                                 </a></div>
                             <div class="col-lg-7 col-md-7 u-s-m-b-30">
 
-                                <a class="collection" href="shop-side-version-2.html">
+                                <a class="collection" href="/shop-side-version-2">
                                     <div class="aspect aspect--bg-grey aspect--1286-890">
 
                                         <img class="aspect__img collection__img" src="images/collection/coll-3.jpg" alt=""></div>
                                 </a></div>
                             <div class="col-lg-5 col-md-5 u-s-m-b-30">
 
-                                <a class="collection" href="shop-side-version-2.html">
+                                <a class="collection" href="/shop-side-version-2">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
                                         <img class="aspect__img collection__img" src="images/collection/coll-4.jpg" alt=""></div>
@@ -1628,7 +1629,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product2.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1641,21 +1642,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Red Wireless Headphone</a></span>
+                                                    <a href="/product-detail">Red Wireless Headphone</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -1669,7 +1670,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product3.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1682,21 +1683,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Yellow Wireless Headphone</a></span>
+                                                    <a href="/product-detail">Yellow Wireless Headphone</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -1710,7 +1711,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product4.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1723,21 +1724,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Hover Skateboard Scooter</a></span>
+                                                    <a href="/product-detail">Hover Skateboard Scooter</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -1751,7 +1752,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product5.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1764,21 +1765,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Hover Red Skateboard Scooter</a></span>
+                                                    <a href="/product-detail">Hover Red Skateboard Scooter</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -1792,7 +1793,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product6.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1805,21 +1806,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Canon DSLR Camera 4k</a></span>
+                                                    <a href="/product-detail">Canon DSLR Camera 4k</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -1833,7 +1834,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product7.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1846,21 +1847,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Nikon DSLR Camera 4k</a></span>
+                                                    <a href="/product-detail">Nikon DSLR Camera 4k</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -1874,7 +1875,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product8.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1887,21 +1888,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Smartphone RAM 4GB New</a></span>
+                                                    <a href="/product-detail">Smartphone RAM 4GB New</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -1915,7 +1916,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product9.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1928,21 +1929,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Smartphone RAM 8GB New</a></span>
+                                                    <a href="/product-detail">Smartphone RAM 8GB New</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -1956,7 +1957,7 @@ body {
                                             <div class="product-o product-o--hover-on product-o--radius">
                                                 <div class="product-o__wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product10.jpg" alt=""></a>
                                                     <div class="product-o__action-wrap">
@@ -1969,21 +1970,21 @@ body {
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                             <li>
 
-                                                                <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                                <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <span class="product-o__category">
 
-                                                    <a href="shop-side-version-2.html">Electronics</a></span>
+                                                    <a href="/shop-side-version-2">Electronics</a></span>
 
                                                 <span class="product-o__name">
 
-                                                    <a href="product-detail.html">Smartphone RAM 16GB New</a></span>
+                                                    <a href="/product-detail">Smartphone RAM 16GB New</a></span>
                                                 <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-o__review">(23)</span></div>
@@ -2039,7 +2040,7 @@ body {
                                 <div class="product-o product-o--radius product-o--hover-off u-h-100">
                                     <div class="product-o__wrap">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                             <img class="aspect__img" src="images/product/electronic/product11.jpg" alt=""></a>
                                         <div class="product-o__special-count-wrap">
@@ -2055,21 +2056,21 @@ body {
                                                     <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">DJI Phantom Drone 4k</a></span>
+                                        <a href="/product-detail">DJI Phantom Drone 4k</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 
                                         <span class="product-o__review">(2)</span></div>
@@ -2083,7 +2084,7 @@ body {
                                 <div class="product-o product-o--radius product-o--hover-off u-h-100">
                                     <div class="product-o__wrap">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                             <img class="aspect__img" src="images/product/electronic/product12.jpg" alt=""></a>
                                         <div class="product-o__special-count-wrap">
@@ -2099,21 +2100,21 @@ body {
                                                     <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">DJI Phantom Drone 2k</a></span>
+                                        <a href="/product-detail">DJI Phantom Drone 2k</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 
                                         <span class="product-o__review">(2)</span></div>
@@ -2160,7 +2161,7 @@ body {
                                     <div class="product-o product-o--hover-on">
                                         <div class="product-o__wrap">
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                 <img class="aspect__img" src="images/product/electronic/product13.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
@@ -2173,21 +2174,21 @@ body {
                                                         <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
 
                                         <span class="product-o__category">
 
-                                            <a href="shop-side-version-2.html">Electronics</a></span>
+                                            <a href="/shop-side-version-2">Electronics</a></span>
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Nikon DSLR 4K Camera</a></span>
+                                            <a href="/product-detail">Nikon DSLR 4K Camera</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
 
                                             <span class="product-o__review">(0)</span></div>
@@ -2201,7 +2202,7 @@ body {
                                     <div class="product-o product-o--hover-on">
                                         <div class="product-o__wrap">
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                 <img class="aspect__img" src="images/product/electronic/product14.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
@@ -2214,21 +2215,21 @@ body {
                                                         <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
 
                                         <span class="product-o__category">
 
-                                            <a href="shop-side-version-2.html">Electronics</a></span>
+                                            <a href="/shop-side-version-2">Electronics</a></span>
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Nikon DSLR 2K Camera</a></span>
+                                            <a href="/product-detail">Nikon DSLR 2K Camera</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
 
                                             <span class="product-o__review">(0)</span></div>
@@ -2242,7 +2243,7 @@ body {
                                     <div class="product-o product-o--hover-on">
                                         <div class="product-o__wrap">
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                 <img class="aspect__img" src="images/product/electronic/product15.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
@@ -2255,21 +2256,21 @@ body {
                                                         <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
 
                                         <span class="product-o__category">
 
-                                            <a href="shop-side-version-2.html">Electronics</a></span>
+                                            <a href="/shop-side-version-2">Electronics</a></span>
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Sony DSLR 4K Camera</a></span>
+                                            <a href="/product-detail">Sony DSLR 4K Camera</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
 
                                             <span class="product-o__review">(0)</span></div>
@@ -2283,7 +2284,7 @@ body {
                                     <div class="product-o product-o--hover-on">
                                         <div class="product-o__wrap">
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                 <img class="aspect__img" src="images/product/electronic/product16.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
@@ -2296,21 +2297,21 @@ body {
                                                         <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
 
                                         <span class="product-o__category">
 
-                                            <a href="shop-side-version-2.html">Electronics</a></span>
+                                            <a href="/shop-side-version-2">Electronics</a></span>
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Sony DSLR 2K Camera</a></span>
+                                            <a href="/product-detail">Sony DSLR 2K Camera</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
 
                                             <span class="product-o__review">(0)</span></div>
@@ -2324,7 +2325,7 @@ body {
                                     <div class="product-o product-o--hover-on">
                                         <div class="product-o__wrap">
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                 <img class="aspect__img" src="images/product/electronic/product17.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
@@ -2337,21 +2338,21 @@ body {
                                                         <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
 
                                         <span class="product-o__category">
 
-                                            <a href="shop-side-version-2.html">Electronics</a></span>
+                                            <a href="/shop-side-version-2">Electronics</a></span>
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Canon DSLR 4K Camera</a></span>
+                                            <a href="/product-detail">Canon DSLR 4K Camera</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
 
                                             <span class="product-o__review">(0)</span></div>
@@ -2365,7 +2366,7 @@ body {
                                     <div class="product-o product-o--hover-on">
                                         <div class="product-o__wrap">
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                                 <img class="aspect__img" src="images/product/electronic/product18.jpg" alt=""></a>
                                             <div class="product-o__action-wrap">
@@ -2378,21 +2379,21 @@ body {
                                                         <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                     <li>
 
-                                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                        <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
 
                                         <span class="product-o__category">
 
-                                            <a href="shop-side-version-2.html">Electronics</a></span>
+                                            <a href="/shop-side-version-2">Electronics</a></span>
 
                                         <span class="product-o__name">
 
-                                            <a href="product-detail.html">Canon DSLR 2K Camera</a></span>
+                                            <a href="/product-detail">Canon DSLR 2K Camera</a></span>
                                         <div class="product-o__rating gl-rating-style"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
 
                                             <span class="product-o__review">(0)</span></div>
@@ -2436,7 +2437,7 @@ body {
 
                                     <span class="banner-bg__text-block banner-bg__text-3 u-c-secondary">Enjoy Free Shipping when you buy 2 items and above!</span>
 
-                                    <a class="banner-bg__shop-now btn--e-secondary" href="shop-side-version-2.html">Shop Now</a>
+                                    <a class="banner-bg__shop-now btn--e-secondary" href="/shop-side-version-2">Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -2475,7 +2476,7 @@ body {
                                 <div class="product-o product-o--hover-on u-h-100">
                                     <div class="product-o__wrap">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                             <img class="aspect__img" src="images/product/electronic/product19.jpg" alt=""></a>
                                         <div class="product-o__action-wrap">
@@ -2488,21 +2489,21 @@ body {
                                                     <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Tablet 14inch Screen</a></span>
+                                        <a href="/product-detail">Tablet 14inch Screen</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                         <span class="product-o__review">(23)</span></div>
@@ -2516,7 +2517,7 @@ body {
                                 <div class="product-o product-o--hover-on u-h-100">
                                     <div class="product-o__wrap">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                             <img class="aspect__img" src="images/product/electronic/product20.jpg" alt=""></a>
                                         <div class="product-o__action-wrap">
@@ -2529,21 +2530,21 @@ body {
                                                     <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Tablet 18inch Screen</a></span>
+                                        <a href="/product-detail">Tablet 18inch Screen</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                         <span class="product-o__review">(23)</span></div>
@@ -2557,7 +2558,7 @@ body {
                                 <div class="product-o product-o--hover-on u-h-100">
                                     <div class="product-o__wrap">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                             <img class="aspect__img" src="images/product/electronic/product21.jpg" alt=""></a>
                                         <div class="product-o__action-wrap">
@@ -2570,21 +2571,21 @@ body {
                                                     <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Tablet 13inch Screen Ram 16GB</a></span>
+                                        <a href="/product-detail">Tablet 13inch Screen Ram 16GB</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                         <span class="product-o__review">(23)</span></div>
@@ -2598,7 +2599,7 @@ body {
                                 <div class="product-o product-o--hover-on u-h-100">
                                     <div class="product-o__wrap">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="/product-detail">
 
                                             <img class="aspect__img" src="images/product/electronic/product22.jpg" alt=""></a>
                                         <div class="product-o__action-wrap">
@@ -2611,21 +2612,21 @@ body {
                                                     <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-plus-circle"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
                                                 <li>
 
-                                                    <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
+                                                    <a href="/signin" data-tooltip="tooltip" data-placement="top" title="Email me When the price drops"><i class="fas fa-envelope"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <span class="product-o__category">
 
-                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                     <span class="product-o__name">
 
-                                        <a href="product-detail.html">Tablet 12inch Screen Ram 16GB</a></span>
+                                        <a href="/product-detail">Tablet 12inch Screen Ram 16GB</a></span>
                                     <div class="product-o__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                         <span class="product-o__review">(23)</span></div>
@@ -2652,7 +2653,7 @@ body {
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6 u-s-m-b-30">
 
-                                <a class="promotion" href="shop-side-version-2.html">
+                                <a class="promotion" href="/shop-side-version-2">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
                                         <img class="aspect__img promotion__img" src="images/promo/promo-img-1.jpg" alt=""></div>
@@ -2671,7 +2672,7 @@ body {
                                 </a></div>
                             <div class="col-lg-4 col-md-4 col-sm-6 u-s-m-b-30">
 
-                                <a class="promotion" href="shop-side-version-2.html">
+                                <a class="promotion" href="/shop-side-version-2">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
                                         <img class="aspect__img promotion__img" src="images/promo/promo-img-2.jpg" alt=""></div>
@@ -2690,7 +2691,7 @@ body {
                                 </a></div>
                             <div class="col-lg-4 col-md-4 col-sm-6 u-s-m-b-30">
 
-                                <a class="promotion" href="shop-side-version-2.html">
+                                <a class="promotion" href="/shop-side-version-2">
                                     <div class="aspect aspect--bg-grey aspect--square">
 
                                         <img class="aspect__img promotion__img" src="images/promo/promo-img-3.jpg" alt=""></div>
@@ -2729,18 +2730,18 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product23.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 15 Ram 16GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 15 Ram 16GB</a></span>
 
                                                     <span class="product-l__price">$125.00</span></div>
                                             </div>
@@ -2749,18 +2750,18 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product24.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 13 Ram 16GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 13 Ram 16GB</a></span>
 
                                                     <span class="product-l__price">$125.00</span></div>
                                             </div>
@@ -2769,18 +2770,18 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product25.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 15 Ram 8GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 15 Ram 8GB</a></span>
 
                                                     <span class="product-l__price">$125.00</span></div>
                                             </div>
@@ -2797,18 +2798,18 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product26.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 10 Ram 16GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 10 Ram 16GB</a></span>
 
                                                     <span class="product-l__price">$125.00
 
@@ -2819,18 +2820,18 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product27.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 15 Ram 8GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 15 Ram 8GB</a></span>
 
                                                     <span class="product-l__price">$125.00
 
@@ -2841,18 +2842,18 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product28.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 15 Ultra Ram 16GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 15 Ultra Ram 16GB</a></span>
 
                                                     <span class="product-l__price">$125.00
 
@@ -2871,7 +2872,7 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product29.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
@@ -2879,11 +2880,11 @@ body {
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 20 Ultra Ram 16GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 20 Ultra Ram 16GB</a></span>
 
                                                     <span class="product-l__price">$125.00</span>
                                                 </div>
@@ -2893,7 +2894,7 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product30.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
@@ -2901,11 +2902,11 @@ body {
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 11 Ultra Ram 16GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 11 Ultra Ram 16GB</a></span>
 
                                                     <span class="product-l__price">$125.00</span>
                                                 </div>
@@ -2915,7 +2916,7 @@ body {
                                             <div class="product-l">
                                                 <div class="product-l__img-wrap">
 
-                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="product-detail.html">
+                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block product-l__link" href="/product-detail">
 
                                                         <img class="aspect__img" src="images/product/electronic/product31.jpg" alt=""></a></div>
                                                 <div class="product-l__info-wrap">
@@ -2923,11 +2924,11 @@ body {
 
                                                     <span class="product-l__category">
 
-                                                        <a href="shop-side-version-2.html">Electronics</a></span>
+                                                        <a href="/shop-side-version-2">Electronics</a></span>
 
                                                     <span class="product-l__name">
 
-                                                        <a href="product-detail.html">Razor Gear 10 Ultra Ram 16GB</a></span>
+                                                        <a href="/product-detail">Razor Gear 10 Ultra Ram 16GB</a></span>
 
                                                     <span class="product-l__price">$125.00</span>
                                                 </div>
@@ -3019,7 +3020,7 @@ body {
 
                                         <!--====== Image Code ======-->
 
-                                        <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="blog-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="/blog-detail">
 
                                             <img class="aspect__img" src="images/blog/post-2.jpg" alt=""></a>
                                         <!--====== End - Image Code ======-->
@@ -3041,13 +3042,13 @@ body {
 
                                                 <span class="bp-mini__author">
 
-                                                    <a href="#">Dayle</a></span></span>
+                                                    <a href="javascript:void(0)">Dayle</a></span></span>
 
                                             <span class="bp-mini__stat">
 
                                                 <span class="bp-mini__comment">
 
-                                                    <a href="blog-detail.html"><i class="far fa-comments u-s-m-r-4"></i>
+                                                    <a href="/blog-detail"><i class="far fa-comments u-s-m-r-4"></i>
 
                                                         <span>8</span></a></span></span></div>
                                         <div class="bp-mini__category">
@@ -3060,7 +3061,7 @@ body {
 
                                         <span class="bp-mini__h1">
 
-                                            <a href="blog-detail.html">Life is an extraordinary Adventure</a></span>
+                                            <a href="/blog-detail">Life is an extraordinary Adventure</a></span>
                                         <p class="bp-mini__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         <div class="blog-t-w">
 
@@ -3078,7 +3079,7 @@ body {
 
                                         <!--====== Image Code ======-->
 
-                                        <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="blog-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="/blog-detail">
 
                                             <img class="aspect__img" src="images/blog/post-12.jpg" alt=""></a>
                                         <!--====== End - Image Code ======-->
@@ -3100,13 +3101,13 @@ body {
 
                                                 <span class="bp-mini__author">
 
-                                                    <a href="#">Dayle</a></span></span>
+                                                    <a href="javascript:void(0)">Dayle</a></span></span>
 
                                             <span class="bp-mini__stat">
 
                                                 <span class="bp-mini__comment">
 
-                                                    <a href="blog-detail.html"><i class="far fa-comments u-s-m-r-4"></i>
+                                                    <a href="/blog-detail"><i class="far fa-comments u-s-m-r-4"></i>
 
                                                         <span>8</span></a></span></span></div>
                                         <div class="bp-mini__category">
@@ -3119,7 +3120,7 @@ body {
 
                                         <span class="bp-mini__h1">
 
-                                            <a href="blog-detail.html">Wait till its open</a></span>
+                                            <a href="/blog-detail">Wait till its open</a></span>
                                         <p class="bp-mini__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         <div class="blog-t-w">
 
@@ -3137,7 +3138,7 @@ body {
 
                                         <!--====== Image Code ======-->
 
-                                        <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="blog-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--1366-768 u-d-block" href="/blog-detail">
 
                                             <img class="aspect__img" src="images/blog/post-5.jpg" alt=""></a>
                                         <!--====== End - Image Code ======-->
@@ -3159,13 +3160,13 @@ body {
 
                                                 <span class="bp-mini__author">
 
-                                                    <a href="#">Dayle</a></span></span>
+                                                    <a href="javascript:void(0)">Dayle</a></span></span>
 
                                             <span class="bp-mini__stat">
 
                                                 <span class="bp-mini__comment">
 
-                                                    <a href="blog-detail.html"><i class="far fa-comments u-s-m-r-4"></i>
+                                                    <a href="/blog-detail"><i class="far fa-comments u-s-m-r-4"></i>
 
                                                         <span>8</span></a></span></span></div>
                                         <div class="bp-mini__category">
@@ -3178,7 +3179,7 @@ body {
 
                                         <span class="bp-mini__h1">
 
-                                            <a href="blog-detail.html">Tell me difference between smoke and vape</a></span>
+                                            <a href="/blog-detail">Tell me difference between smoke and vape</a></span>
                                         <p class="bp-mini__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         <div class="blog-t-w">
 
@@ -3303,32 +3304,32 @@ body {
                             <div class="owl-carousel" id="brand-slider" data-item="5">
                                 <div class="brand-slide">
 
-                                    <a href="shop-side-version-2.html">
+                                    <a href="/shop-side-version-2">
 
                                         <img src="images/brand/b1.png" alt=""></a></div>
                                 <div class="brand-slide">
 
-                                    <a href="shop-side-version-2.html">
+                                    <a href="/shop-side-version-2">
 
                                         <img src="images/brand/b2.png" alt=""></a></div>
                                 <div class="brand-slide">
 
-                                    <a href="shop-side-version-2.html">
+                                    <a href="/shop-side-version-2">
 
                                         <img src="images/brand/b3.png" alt=""></a></div>
                                 <div class="brand-slide">
 
-                                    <a href="shop-side-version-2.html">
+                                    <a href="/shop-side-version-2">
 
                                         <img src="images/brand/b4.png" alt=""></a></div>
                                 <div class="brand-slide">
 
-                                    <a href="shop-side-version-2.html">
+                                    <a href="/shop-side-version-2">
 
                                         <img src="images/brand/b5.png" alt=""></a></div>
                                 <div class="brand-slide">
 
-                                    <a href="shop-side-version-2.html">
+                                    <a href="/shop-side-version-2">
 
                                         <img src="images/brand/b6.png" alt=""></a></div>
                             </div>
@@ -3365,19 +3366,19 @@ body {
                                     <ul>
                                         <li>
 
-                                            <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <a class="s-fb--color-hover" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
                                         <li>
 
-                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <a class="s-tw--color-hover" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
                                         <li>
 
-                                            <a class="s-youtube--color-hover" href="#"><i class="fab fa-youtube"></i></a></li>
+                                            <a class="s-youtube--color-hover" href="javascript:void(0)"><i class="fab fa-youtube"></i></a></li>
                                         <li>
 
-                                            <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <a class="s-insta--color-hover" href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
                                         <li>
 
-                                            <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            <a class="s-gplus--color-hover" href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -3392,19 +3393,19 @@ body {
                                             <ul>
                                                 <li>
 
-                                                    <a href="cart.html">Cart</a></li>
+                                                    <a href="/cart">Cart</a></li>
                                                 <li>
 
-                                                    <a href="dashboard.html">Account</a></li>
+                                                    <a href="/dashboard">Account</a></li>
                                                 <li>
 
-                                                    <a href="shop-side-version-2.html">Manufacturer</a></li>
+                                                    <a href="/shop-side-version-2">Manufacturer</a></li>
                                                 <li>
 
-                                                    <a href="dash-payment-option.html">Finance</a></li>
+                                                    <a href="/dashboard/payment-option">Finance</a></li>
                                                 <li>
 
-                                                    <a href="shop-side-version-2.html">Shop</a></li>
+                                                    <a href="/shop-side-version-2">Shop</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -3417,19 +3418,19 @@ body {
                                             <ul>
                                                 <li>
 
-                                                    <a href="about.html">About us</a></li>
+                                                    <a href="/about">About us</a></li>
                                                 <li>
 
-                                                    <a href="contact.html">Contact Us</a></li>
+                                                    <a href="/contact">Contact Us</a></li>
                                                 <li>
 
-                                                    <a href="index.html">Sitemap</a></li>
+                                                    <a href="/">Sitemap</a></li>
                                                 <li>
 
-                                                    <a href="dash-my-order.html">Delivery</a></li>
+                                                    <a href="/dashboard/my-order">Delivery</a></li>
                                                 <li>
 
-                                                    <a href="shop-side-version-2.html">Store</a></li>
+                                                    <a href="/shop-side-version-2">Store</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -3440,7 +3441,7 @@ body {
                             <div class="outer-footer__content">
 
                                 <span class="outer-footer__content-title">Join our Newsletter</span>
-                                <form class="newsletter">
+                                <form class="newsletter" action="/signup" method="get">
                                     <div class="u-s-m-b-15">
                                         <div class="radio-box newsletter__radio">
 
@@ -3481,7 +3482,7 @@ body {
 
                                     <span>Copyright © 2018</span>
 
-                                    <a href="index.html">Reshop</a>
+                                    <a href="/">Reshop</a>
 
                                     <span>All Right Reserved</span></div>
                                 <div class="lower-footer__payment">
@@ -3519,16 +3520,16 @@ body {
                                     <ul class="pd-breadcrumb__list">
                                         <li class="has-separator">
 
-                                            <a href="index.hml">Home</a></li>
+                                            <a href="/">Home</a></li>
                                         <li class="has-separator">
 
-                                            <a href="shop-side-version-2.html">Electronics</a></li>
+                                            <a href="/shop-side-version-2">Electronics</a></li>
                                         <li class="has-separator">
 
-                                            <a href="shop-side-version-2.html">DSLR Cameras</a></li>
+                                            <a href="/shop-side-version-2">DSLR Cameras</a></li>
                                         <li class="is-marked">
 
-                                            <a href="shop-side-version-2.html">Nikon Cameras</a></li>
+                                            <a href="/shop-side-version-2">Nikon Cameras</a></li>
                                     </ul>
                                 </div>
                                 <!--====== End - Product Breadcrumb ======-->
@@ -3596,7 +3597,7 @@ body {
 
                                             <span class="pd-detail__review u-s-m-l-4">
 
-                                                <a href="product-detail.html">23 Reviews</a></span></div>
+                                                <a href="/product-detail">23 Reviews</a></span></div>
                                     </div>
                                     <div class="u-s-m-b-15">
                                         <div class="pd-detail__inline">
@@ -3613,7 +3614,7 @@ body {
 
                                             <span class="pd-detail__click-wrap"><i class="far fa-heart u-s-m-r-6"></i>
 
-                                                <a href="signin.html">Add to Wishlist</a>
+                                                <a href="/signin">Add to Wishlist</a>
 
                                                 <span class="pd-detail__click-count">(222)</span></span></div>
                                     </div>
@@ -3622,7 +3623,7 @@ body {
 
                                             <span class="pd-detail__click-wrap"><i class="far fa-envelope u-s-m-r-6"></i>
 
-                                                <a href="signin.html">Email me When the price drops</a>
+                                                <a href="/signin">Email me When the price drops</a>
 
                                                 <span class="pd-detail__click-count">(20)</span></span></div>
                                     </div>
@@ -3630,23 +3631,23 @@ body {
                                         <ul class="pd-social-list">
                                             <li>
 
-                                                <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <a class="s-fb--color-hover" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
                                             <li>
 
-                                                <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <a class="s-tw--color-hover" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
                                             <li>
 
-                                                <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                                <a class="s-insta--color-hover" href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
                                             <li>
 
-                                                <a class="s-wa--color-hover" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                                <a class="s-wa--color-hover" href="javascript:void(0)"><i class="fab fa-whatsapp"></i></a></li>
                                             <li>
 
-                                                <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                <a class="s-gplus--color-hover" href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="u-s-m-b-15">
-                                        <form class="pd-detail__form">
+                                        <form class="pd-detail__form" action="/cart" method="get">
                                             <div class="pd-detail-inline-2">
                                                 <div class="u-s-m-b-15">
 
@@ -3725,9 +3726,9 @@ body {
 
                                         <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">CONTINUE SHOPPING</a>
 
-                                        <a class="s-option__link btn--e-white-brand-shadow" href="cart.html">VIEW CART</a>
+                                        <a class="s-option__link btn--e-white-brand-shadow" href="/cart">VIEW CART</a>
 
-                                        <a class="s-option__link btn--e-brand-shadow" href="checkout.html">PROCEED TO CHECKOUT</a></div>
+                                        <a class="s-option__link btn--e-brand-shadow" href="/checkout">PROCEED TO CHECKOUT</a></div>
                                 </div>
                             </div>
                         </div>
@@ -3748,7 +3749,7 @@ body {
                         <div class="row u-s-m-x-0">
                             <div class="col-lg-6 new-l__col-1 u-s-p-x-0">
 
-                                <a class="new-l__img-wrap u-d-block" href="shop-side-version-2.html">
+                                <a class="new-l__img-wrap u-d-block" href="/shop-side-version-2">
 
                                     <img class="u-img-fluid u-d-block" src="images/newsletter/newsletter.jpg" alt=""></a></div>
                             <div class="col-lg-6 new-l__col-2">
@@ -3759,7 +3760,7 @@ body {
                                     <div class="u-s-m-b-30 new-l--center">
                                         <p class="new-l__p1">Sign up for emails to get the scoop on new arrivals, special sales and more.</p>
                                     </div>
-                                    <form class="new-l__form">
+                                    <form class="new-l__form" action="/signup" method="get">
                                         <div class="u-s-m-b-15">
 
                                             <input class="news-l__input" type="text" placeholder="E-mail Address"></div>
@@ -3849,3 +3850,5 @@ if (slides && totalSlides > 1) {
 </script>
 </body>
 </html>
+
+
